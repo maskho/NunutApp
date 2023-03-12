@@ -2,7 +2,6 @@ import {
   FlatList,
   Image,
   SafeAreaView,
-  StyleSheet,
   Text,
   TouchableOpacity,
   View,
@@ -70,14 +69,17 @@ const RideOptionsCard = () => {
                 <Text style={tw`text-lg font-semibold`}>{title}</Text>
                 <Text>{travelTimeInfo?.duration?.text}</Text>
               </View>
-              <Text style={tw`text-lg`}>
-                Rp
-                {(
-                  travelTimeInfo?.duration?.value *
-                  multiplier *
-                  10
-                ).toLocaleString('id')}
-              </Text>
+              <View>
+                <Text style={tw`text-xs`}>Rekomendasi</Text>
+                <Text style={tw`text-lg`}>
+                  Rp
+                  {(
+                    travelTimeInfo?.duration?.value *
+                    multiplier *
+                    10
+                  ).toLocaleString('id')}
+                </Text>
+              </View>
             </View>
           </TouchableOpacity>
         )}

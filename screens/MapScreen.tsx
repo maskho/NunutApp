@@ -11,11 +11,12 @@ import {useNavigation} from '@react-navigation/native';
 const MapScreen = () => {
   const Stack = createNativeStackNavigator();
   const navigation = useNavigation<any>();
+
   return (
     <View>
       <TouchableOpacity
-        onPress={() => navigation.navigate('HomeScreen')}
-        style={tw`bg-gray-100 absolute z-50 p-3 rounded-full shadow-lg top-16 left-8`}>
+        onPress={() => navigation.navigate('SettingsScreen')}
+        style={tw`bg-gray-100 absolute z-50 p-3 rounded-full shadow-lg top-16 right-8`}>
         <Icon name="menu" />
       </TouchableOpacity>
       <View style={tw`h-1/2`}>
@@ -40,5 +41,3 @@ const MapScreen = () => {
 };
 
 export default MapScreen;
-
-const styles = StyleSheet.create({});
