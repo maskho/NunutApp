@@ -25,7 +25,7 @@ const HomeScreen = () => {
       <View style={tw`p-5`}>
         <TouchableOpacity
           onPress={() => navigation.navigate('SettingsScreen')}
-          style={tw`bg-gray-100 absolute z-50 p-3 rounded-full shadow-lg top-16 right-8`}>
+          style={tw`bg-gray-100 absolute z-50 p-3 rounded-full shadow-lg top-12 right-8`}>
           <Icon name="menu" />
         </TouchableOpacity>
         <Image
@@ -34,7 +34,7 @@ const HomeScreen = () => {
             height: 100,
             resizeMode: 'contain',
           }}
-          source={{uri: 'https://madras.id/logo-title.png'}}
+          source={require('./../assets/images/nunut-black.png')}
         />
         <GooglePlacesAutocomplete
           placeholder="Dari mana?"
