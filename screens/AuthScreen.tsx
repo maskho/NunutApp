@@ -50,7 +50,7 @@ export default function AuthScreen() {
               height: 200,
               resizeMode: 'contain',
             }}
-            source={{uri: 'https://madras.id/logo-title.png'}}
+            source={require('./../assets/images/nunut-white.png')}
           />
         </View>
         <View style={tw`mb-4 w-full bg-white rounded-md h-12 px-6 text-black`}>
